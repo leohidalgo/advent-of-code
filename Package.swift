@@ -1,14 +1,15 @@
 // swift-tools-version: 5.9
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "advent-of-code",
+    name: "aoc",
+    platforms: [.macOS(.v14)],
+    products: [.executable(name: "AOC", targets: ["AOC"])],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .executableTarget(
-            name: "advent-of-code"),
+        .executableTarget(name: "AOC"),
+        .target(name: "AOCCore"),
+        .target(name: "AOC2023", dependencies: ["AOCCore"]),
+        .testTarget(name: "AOCTests", dependencies: ["AOC2023"])
     ]
 )
