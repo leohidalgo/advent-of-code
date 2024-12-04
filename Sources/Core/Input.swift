@@ -3,6 +3,7 @@ import Foundation
 public final class Input: StringInput {
 
     public lazy var characters: [Character] = { Array(raw) }()
+    public lazy var integers: [Int] = { raw.components(separatedBy: .whitespaces).compactMap { Int($0) }  }()
     public lazy var lines: [Line] = { raw.components(separatedBy: .newlines).map { Line($0) } }()
     public lazy var trimmed: Input = { Input(raw.trimmingCharacters(in: .whitespacesAndNewlines)) }()
 
