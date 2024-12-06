@@ -7,8 +7,9 @@ let package = Package(
     name: "aoc",
     targets: [
         .target(name: "Core"),
+        .target(name: "Year2024", dependencies: ["Core"], exclude: inputFiles(for: 2024)),
 
-        .testTarget(name: "AOCTests", dependencies: ["Core"])
+        .testTarget(name: "AOCTests", dependencies: ["Core", "Year2024"])
     ]
 )
 

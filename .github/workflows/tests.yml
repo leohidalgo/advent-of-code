@@ -31,4 +31,4 @@ jobs:
                 swift --version
           - name: Swift Test
             run: |
-                swift test --disable-swift-testing
+                swift test
