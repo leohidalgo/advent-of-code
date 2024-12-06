@@ -16,13 +16,13 @@ struct Day1: Day {
     }
 
     func part2() -> Int {
-        var hash: [Int: Int] = [:]
         let cols = (input().lines.map(\.integers[0]), input().lines.map(\.integers[1]))
 
-        cols.1.forEach { hash[$0, default: 0] += 1 }
+        let frecuency = cols.1
+            .reduce(into: [:]) { $0[$1, default: 0] += 1 }
 
         return cols.0
-            .map { hash[$0, default: 0] * $0 }
+            .map { frecuency[$0, default: 0] * $0 }
             .sum
     }
 }
