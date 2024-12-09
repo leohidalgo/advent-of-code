@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "aoc",
+    platforms: [
+        .macOS(.v15)
+    ],
     targets: [
         .target(name: "Core"),
         .target(name: "Year2024", dependencies: ["Core"], exclude: inputFiles(for: 2024)),
