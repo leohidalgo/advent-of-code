@@ -4,16 +4,16 @@ import RegexBuilder
 
 struct Day3: Day {
 
-    func part1() -> Int {
-        let query = Regex {
-            "mul("
-            TryCapture.integer
-            ","
-            TryCapture.integer
-            ")"
-        }
+    private static let query1 = Regex {
+        "mul("
+        TryCapture.integer
+        ","
+        TryCapture.integer
+        ")"
+    }
 
-        return input().raw.matches(of: query)
+    func part1() -> Int {
+        input().raw.matches(of: Self.query1)
             .map { $0.output.1 * $0.output.2 }
             .sum
     }
