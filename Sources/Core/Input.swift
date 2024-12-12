@@ -7,6 +7,8 @@ public final class Input: StringInput {
     public lazy var lines: [Line] = { raw.components(separatedBy: .newlines).map { Line($0) } }()
     public lazy var trimmed: Input = { Input(raw.trimmingCharacters(in: .whitespacesAndNewlines)) }()
 
+    public lazy var sections: [[Line]] = { raw.split(separator: "\n\n").map { $0.components(separatedBy: .newlines).map { Line($0) } } }()
+
     public var raw: String
 
     init(_ raw: String) {
