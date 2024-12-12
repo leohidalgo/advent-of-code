@@ -28,4 +28,12 @@ struct Year2024Tests {
         #expect(sut.part1() == 183380722, "Part 1")
         #expect(sut.part2() == 82733683, "Part 2")
     }
+
+    @Test
+    func day4() {
+        let sut = Day4()
+
+        #expect(sut.part1() == 2454, "Part 1")
+        #expect(sut.part2() == 1858, "Part 2")
+    }
 }
