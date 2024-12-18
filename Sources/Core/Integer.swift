@@ -2,6 +2,10 @@ import Foundation
 
 public extension Int {
 
+    var isEven: Bool {
+        self % 2 == 0
+    }
+
     var signum: Int {
         signum()
     }
