@@ -1,7 +1,7 @@
 import Core
 import Foundation
 
-struct Day2: Day {
+struct Day02: Day {
 
     func part1() -> Int {
         input().lines

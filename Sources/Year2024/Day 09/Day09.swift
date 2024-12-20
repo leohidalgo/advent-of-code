@@ -1,7 +1,7 @@
 import Core
 import Foundation
 
-struct Day9: Day {
+struct Day09: Day {
 
     func part1() -> Int {
         var memory = input().diskPart1()
