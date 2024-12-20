@@ -1,7 +1,7 @@
 import Core
 import Foundation
 
-struct Day1: Day {
+struct Day01: Day {
 
     func part1() -> Int {
         var cols = (input().lines.map(\.integers[0]), input().lines.map(\.integers[1]))

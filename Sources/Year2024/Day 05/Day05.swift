@@ -1,7 +1,7 @@
 import Core
 import Foundation
 
-struct Day5: Day {
+struct Day05: Day {
 
     private typealias Rules = [Int: Set<Int>]
     private typealias Updates = [[Int]]

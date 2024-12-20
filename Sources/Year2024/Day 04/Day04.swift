@@ -1,7 +1,7 @@
 import Core
 import Foundation
 
-struct Day4: Day {
+struct Day04: Day {
 
     func part1() -> Int {
         let target = Array("XMAS")

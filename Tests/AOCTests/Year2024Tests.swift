@@ -6,48 +6,48 @@ import Testing
 struct Year2024Tests {
 
     @Test
-    func day1() {
-        let sut = Day1()
+    func day01() {
+        let sut = Day01()
 
         #expect(sut.part1() == 2031679, "Part 1")
         #expect(sut.part2() == 19678534, "Part 2")
     }
 
     @Test
-    func day2() {
-        let sut = Day2()
+    func day02() {
+        let sut = Day02()
 
         #expect(sut.part1() == 624, "Part 1")
         #expect(sut.part2() == 658, "Part 2")
     }
 
     @Test
-    func day3() {
-        let sut = Day3()
+    func day03() {
+        let sut = Day03()
 
         #expect(sut.part1() == 183380722, "Part 1")
         #expect(sut.part2() == 82733683, "Part 2")
     }
 
     @Test
-    func day4() {
-        let sut = Day4()
+    func day04() {
+        let sut = Day04()
 
         #expect(sut.part1() == 2454, "Part 1")
         #expect(sut.part2() == 1858, "Part 2")
     }
 
     @Test
-    func day5() {
-        let sut = Day5()
+    func day05() {
+        let sut = Day05()
 
         #expect(sut.part1() == 4609, "Part 1")
         #expect(sut.part2() == 5723, "Part 2")
     }
 
     @Test
-    func day9() {
-        let sut = Day9()
+    func day09() {
+        let sut = Day09()
 
         #expect(sut.part1() == 6283404590840, "Part 1")
         #expect(sut.part2() == 6304576012713, "Part 2")

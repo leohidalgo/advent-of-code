@@ -2,7 +2,7 @@ import Core
 import Foundation
 import RegexBuilder
 
-struct Day3: Day {
+struct Day03: Day {
 
     func part1() -> Int {
         let query = Regex {
