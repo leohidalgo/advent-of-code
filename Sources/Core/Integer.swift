@@ -2,6 +2,10 @@ import Foundation
 
 public extension Int {
 
+    var digits: [Character] {
+        Array(String(self))
+    }
+
     var isEven: Bool {
         self % 2 == 0
     }
