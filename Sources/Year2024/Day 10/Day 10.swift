@@ -50,13 +50,3 @@ struct Day10: Day {
         return answer
     }
 }
-
-private struct Point: Hashable {
-    let row: Int
-    let col: Int
-
-    init(_ row: Int, _ col: Int) {
-        self.row = row
-        self.col = col
-    }
-}
